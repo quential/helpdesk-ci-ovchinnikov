@@ -38,3 +38,5 @@ docker compose down
 В готовом варианте job lint запускает ESLint, test — Jest и настоящие API/SQL-проверки с PostgreSQL. build-and-push публикует образ только после успешных проверок при push в main. При PR и push в develop эта задача пропускается. GITHUB_TOKEN выдаёт GitHub автоматически; создавать PAT для workflow не нужно.
 
 Заполните перед сдачей: ФИО, группа, ссылки на PR, упавший и успешный запуски Actions, полный SHA релизного коммита, адрес образа GHCR. Добавьте в README объяснение CI/Delivery/Deployment и порядок проверки опубликованного образа.
+
+Овчинников Эмлиь Михайлович, 3Р2, PR #1 https://github.com/quential/helpdesk-ci-ovchinnikov/pull/1  |  PR #2 https://github.com/quential/helpdesk-ci-ovchinnikov/pull/2  
