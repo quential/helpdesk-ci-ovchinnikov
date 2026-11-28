@@ -1,4 +1,4 @@
-const LIMITS = { low: 480, medium: 240, high: 60 };
+const LIMITS = { low: 480, medium: 240, high: 60, critical: 15 };
 
 function responseMinutes(priority) {
   if (!Object.hasOwn(LIMITS, priority)) {

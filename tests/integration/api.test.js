@@ -45,3 +45,13 @@ test('invalid priority returns 400', async () => {
   });
   expect(res.status).toBe(400);
 });
+
+test('critical API returns 15 minutes', async () => {
+    const res = await fetch(`${base}/tickets`, {
+        method: 'POST',
+        body: JSON.stringify({ title: 'Git server unavailable', priority: 'critical' })
+    });
+    expect(res.status).toBe(201);
+    expect((await res.json()).response_minutes).toBe(15);
+});
+
